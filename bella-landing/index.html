@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bella | Elegancia que brilla contigo</title>
+  <meta name="description" content="Landing page de Bella, joyas elegantes con asesoría personalizada, envíos y pagos seguros.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <svg class="svg-defs" aria-hidden="true" focusable="false">
+    <symbol id="icon-bag" viewBox="0 0 24 24"><path d="M6.5 8h11l1 12h-13l1-12Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></symbol>
+    <symbol id="icon-user" viewBox="0 0 24 24"><path d="M20 21a8 8 0 0 0-16 0"/><circle cx="12" cy="7" r="4"/></symbol>
+    <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="icon-gem" viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 12L2 9l4-6Z"/><path d="M2 9h20M6 3l6 18 6-18M6 3l-4 6M18 3l4 6"/></symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-5"/></symbol>
+    <symbol id="icon-star" viewBox="0 0 24 24"><path d="m12 2 2.9 6 6.6.9-4.8 4.7 1.1 6.5L12 17l-5.8 3.1 1.1-6.5-4.8-4.7 6.6-.9L12 2Z"/></symbol>
+    <symbol id="icon-truck" viewBox="0 0 24 24"><path d="M3 6h11v11H3z"/><path d="M14 10h4l3 3v4h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></symbol>
+    <symbol id="icon-card" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h4"/></symbol>
+    <symbol id="icon-refresh" viewBox="0 0 24 24"><path d="M20 7v5h-5"/><path d="M4 17v-5h5"/><path d="M19 12a7 7 0 0 0-12-5M5 12a7 7 0 0 0 12 5"/></symbol>
+    <symbol id="icon-headset" viewBox="0 0 24 24"><path d="M4 13a8 8 0 0 1 16 0"/><path d="M4 13v4a2 2 0 0 0 2 2h1v-8H6a2 2 0 0 0-2 2ZM20 13v4a2 2 0 0 1-2 2h-1v-8h1a2 2 0 0 1 2 2Z"/><path d="M17 19c0 1.1-2.2 2-5 2"/></symbol>
+    <symbol id="icon-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="13" rx="1"/><path d="M12 8v13M3 12h18M7.5 8a2.5 2.5 0 1 1 4.5-1.5V8M16.5 8A2.5 2.5 0 1 0 12 6.5V8"/></symbol>
+    <symbol id="icon-message" viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.5 7.5L3 21l2-5.2A8.5 8.5 0 1 1 21 11.5Z"/></symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></symbol>
+    <symbol id="icon-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  </svg>
+
+  <header class="site-header" id="inicio">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="Bella inicio">
+        <span>Bella</span>
+        <small>Elegancia que brilla contigo</small>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <svg><use href="#icon-menu"></use></svg>
+      </button>
+
+      <div class="nav-panel" id="navPanel">
+        <a href="#inicio">Inicio</a>
+        <a href="#favoritos">Catálogo</a>
+        <a href="#beneficios">Colecciones</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#asesoria">Contacto</a>
+      </div>
+
+      <div class="nav-actions" aria-label="Accesos rápidos">
+        <a href="#asesoria" aria-label="Cuenta"><svg><use href="#icon-user"></use></svg></a>
+        <a href="#favoritos" aria-label="Buscar"><svg><use href="#icon-search"></use></svg></a>
+        <a href="#asesoria" aria-label="Bolsa de compras"><svg><use href="#icon-bag"></use></svg></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-media" aria-hidden="true">
+        <img src="assets/hero-jewelry.png" alt="">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <span class="eyebrow">Nueva colección</span>
+        <h1>Elegancia que <em>brilla contigo</em></h1>
+        <p>Joyas únicas que realzan tu belleza en cada momento especial.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#asesoria" data-choice="Asesoría personalizada">
+            <svg><use href="#icon-message"></use></svg>
+            Quiero que me contacten
+            <small>Asesoría personalizada</small>
+          </a>
+          <a class="btn btn-secondary" href="#asesoria" data-choice="Catálogo completo">
+            Ver catálogo
+            <small>Explorar productos</small>
+          </a>
+        </div>
+        <div class="hero-points" aria-label="Beneficios destacados">
+          <article>
+            <svg><use href="#icon-gem"></use></svg>
+            <strong>Diseños exclusivos</strong>
+            <span>Piezas únicas</span>
+          </article>
+          <article>
+            <svg><use href="#icon-shield"></use></svg>
+            <strong>Materiales premium</strong>
+            <span>Calidad garantizada</span>
+          </article>
+          <article>
+            <svg><use href="#icon-star"></use></svg>
+            <strong>Hecho para durar</strong>
+            <span>Resistentes y elegantes</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-strip container" aria-label="Servicios">
+      <article>
+        <svg><use href="#icon-truck"></use></svg>
+        <div><strong>Envíos a todo el país</strong><span>Rápidos y seguros</span></div>
+      </article>
+      <article>
+        <svg><use href="#icon-card"></use></svg>
+        <div><strong>Pagos 100% seguros</strong><span>Comodidad y confianza</span></div>
+      </article>
+      <article>
+        <svg><use href="#icon-refresh"></use></svg>
+        <div><strong>Cambios faciles</strong><span>Sin complicaciones</span></div>
+      </article>
+      <article>
+        <svg><use href="#icon-headset"></use></svg>
+        <div><strong>Atención personalizada</strong><span>Estamos para ayudarte</span></div>
+      </article>
+    </section>
+
+    <section class="section products" id="favoritos">
+      <div class="section-heading">
+        <span class="section-mark">♥</span>
+        <h2>Nuestros favoritos</h2>
+        <p>Descubre piezas que enamoran</p>
+      </div>
+
+      <div class="container product-grid">
+        <article class="product-card">
+          <a href="#asesoria" data-choice="Aros Trenza">
+            <img src="assets/aros-trenza.png" alt="Aros Trenza dorados">
+          </a>
+          <h3>Aros Trenza</h3>
+          <p>S/ 160.00</p>
+        </article>
+        <article class="product-card">
+          <a href="#asesoria" data-choice="Aros Minimal">
+            <img src="assets/aros-minimal.png" alt="Aros Minimal plateados">
+          </a>
+          <h3>Aros Minimal</h3>
+          <p>S/ 130.00</p>
+        </article>
+        <article class="product-card">
+          <a href="#asesoria" data-choice="Aros Abstract">
+            <img src="assets/aros-abstract.png" alt="Aros Abstract plateados">
+          </a>
+          <h3>Aros Abstract</h3>
+          <p>S/ 130.00</p>
+        </article>
+        <article class="product-card">
+          <a href="#asesoria" data-choice="Aros Perla">
+            <img src="assets/aros-perla.png" alt="Aros Perla dorados con perlas">
+          </a>
+          <h3>Aros Perla</h3>
+          <p>S/ 90.00</p>
+        </article>
+      </div>
+
+      <div class="center-action">
+        <a class="btn btn-primary btn-wide" href="#asesoria" data-choice="Catálogo completo">
+          Ver catálogo completo
+          <svg><use href="#icon-arrow"></use></svg>
+        </a>
+      </div>
+    </section>
+
+    <section class="feature-band" id="beneficios">
+      <div class="container feature-layout">
+        <div>
+          <h2>Mas que accesorios,<br><em>momentos que brillan</em></h2>
+          <p>Cada pieza está diseñada para acompañarte y hacerte sentir única todos los días.</p>
+        </div>
+        <article>
+          <svg><use href="#icon-gem"></use></svg>
+          <h3>Diseños exclusivos</h3>
+          <p>Piezas únicas que marcan tu estilo.</p>
+        </article>
+        <article>
+          <svg><use href="#icon-gift"></use></svg>
+          <h3>Listo para regalar</h3>
+          <p>Empaques elegantes sin costo adicional.</p>
+        </article>
+        <article>
+          <svg><use href="#icon-shield"></use></svg>
+          <h3>Calidad garantizada</h3>
+          <p>Materiales duraderos y resistentes.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section testimonials" id="nosotros">
+      <div class="section-heading">
+        <h2>Ellas ya brillan con Bella</h2>
+      </div>
+      <div class="container testimonial-grid">
+        <article class="quote-card">
+          <div class="avatar">MF</div>
+          <div>
+            <div class="stars" aria-label="5 estrellas">★★★★★</div>
+            <p>"Las joyas de Bella son hermosas y de excelente calidad. Las uso todos los días y siguen como nuevas. Totalmente recomendadas."</p>
+            <strong>Maria Fernanda R.</strong>
+          </div>
+        </article>
+        <article class="quote-card">
+          <div class="avatar avatar-alt">CG</div>
+          <div>
+            <div class="stars" aria-label="5 estrellas">★★★★★</div>
+            <p>"Me encantó la presentación y el detalle de cada producto. Definitivamente volveré a comprar."</p>
+            <strong>Camila G.</strong>
+          </div>
+        </article>
+      </div>
+
+      <div class="trust-row container">
+        <article>
+          <svg><use href="#icon-bag"></use></svg>
+          <div><strong>Compra 100% segura</strong><span>Protegemos tu información.</span></div>
+        </article>
+        <article>
+          <svg><use href="#icon-user"></use></svg>
+          <div><strong>+2,000 clientes satisfechas</strong><span>Únete a nuestra comunidad.</span></div>
+        </article>
+        <article>
+          <svg><use href="#icon-shield"></use></svg>
+          <div><strong>Garantía de satisfacción</strong><span>Si no te encanta, lo solucionamos.</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="consultation" id="asesoria">
+      <div class="container consultation-layout">
+        <div class="consultation-copy">
+          <h2>¿Quieres encontrar la joya ideal para ti o para regalar?</h2>
+          <span class="heart">♥</span>
+          <p>Déjanos tus datos y te ayudaremos a elegir la pieza perfecta según tu estilo, ocasión y presupuesto.</p>
+          <div class="consultation-points">
+            <article>
+              <svg><use href="#icon-message"></use></svg>
+              <strong>Atención personalizada por WhatsApp</strong>
+            </article>
+            <article>
+              <svg><use href="#icon-truck"></use></svg>
+              <strong>Envíos a todo el país rápidos y seguros</strong>
+            </article>
+            <article>
+              <svg><use href="#icon-shield"></use></svg>
+              <strong>Pago seguro y confiable</strong>
+            </article>
+            <article>
+              <svg><use href="#icon-refresh"></use></svg>
+              <strong>Cambios faciles y sin complicaciones</strong>
+            </article>
+          </div>
+        </div>
+
+        <form class="lead-form" id="leadForm">
+          <div class="form-grid">
+            <label>
+              <span>Nombre completo</span>
+              <input type="text" name="nombre" placeholder="Nombre completo" autocomplete="name" required>
+            </label>
+            <label>
+              <span>WhatsApp</span>
+              <input type="tel" name="whatsapp" placeholder="WhatsApp" autocomplete="tel" required>
+            </label>
+          </div>
+          <label>
+              <span>Correo electrónico</span>
+              <input type="email" name="correo" placeholder="Correo electrónico" autocomplete="email">
+          </label>
+          <label>
+            <span>Tipo de joya</span>
+            <select name="tipo" id="tipoJoya" required>
+              <option value="">¿Que tipo de joya buscas?</option>
+              <option>Asesoría personalizada</option>
+              <option>Catálogo completo</option>
+              <option>Aros Trenza</option>
+              <option>Aros Minimal</option>
+              <option>Aros Abstract</option>
+              <option>Aros Perla</option>
+              <option>Regalo especial</option>
+            </select>
+          </label>
+          <label>
+            <span>Mensaje</span>
+            <textarea name="mensaje" rows="4" placeholder="Cuéntanos qué estás buscando (opcional)"></textarea>
+          </label>
+          <button class="btn btn-primary form-button" type="submit">
+            Quiero recibir asesoría
+            <svg><use href="#icon-phone"></use></svg>
+          </button>
+          <p class="privacy"><svg><use href="#icon-lock"></use></svg> Tu información está 100% protegida. No compartimos tus datos.</p>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-layout">
+      <a class="brand" href="#inicio">
+        <span>Bella</span>
+        <small>Elegancia que brilla contigo</small>
+      </a>
+      <div>
+        <h3>Enlaces</h3>
+        <a href="#favoritos">Catálogo</a>
+        <a href="#beneficios">Colecciones</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#asesoria">Contacto</a>
+      </div>
+      <div>
+        <h3>Siguenos</h3>
+        <div class="socials">
+          <a href="#asesoria" aria-label="Instagram">Ig</a>
+          <a href="#asesoria" aria-label="Facebook">Fb</a>
+          <a href="#asesoria" aria-label="Pinterest">Pt</a>
+          <a href="#asesoria" aria-label="TikTok">Tk</a>
+        </div>
+      </div>
+      <p>© 2026 Bella. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
